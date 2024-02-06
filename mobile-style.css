@@ -1,7 +1,41 @@
 /* Responsive Mobile */
 @media only screen and (max-width: 480px) {
+  body.menu-open {
+    overflow: hidden;
+  }
+
+  header nav #hamburger {
+    display: inline;
+  }
+
+  #nav-menu {
+    background-color: black;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 999;
+    padding: 50px 20px;
+  }
+
+  #menu-mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50%;
+  }
+
   header nav ul {
-    display: none;
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
   }
 
   header {

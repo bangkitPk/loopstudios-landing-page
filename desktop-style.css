@@ -20,6 +20,15 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+header nav #hamburger {
+  display: none;
+}
+
+#menu-mobile-header {
+  display: none;
 }
 
 header ul {
