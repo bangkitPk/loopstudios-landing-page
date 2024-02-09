@@ -1,7 +1,17 @@
 /* Responsive Mobile */
 @media only screen and (max-width: 480px) {
   body.menu-open {
+    /* prevent scrolling when navbar menu open */
     overflow: hidden;
+  }
+
+  header nav {
+    padding: 50px 25px 25px 25px;
+  }
+
+  .scrolled-navbar {
+    padding: 25px;
+    background-color: #e600ff;
   }
 
   header nav #hamburger {
@@ -10,7 +20,7 @@
 
   #nav-menu {
     background-color: black;
-    position: fixed;
+    position: absolute;
     top: -100vh;
     left: 0;
     width: 100vw;
